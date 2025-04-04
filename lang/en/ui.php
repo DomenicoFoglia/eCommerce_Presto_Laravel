@@ -69,6 +69,9 @@ return
             'category' => 'Category',
             'createBtn' => 'Create',
             'selectCategory' => 'Select category',
+            'temporary_images' => [
+                'image' => 'You can only upload image files (e.g. jpg, png, gif).',
+            ],
         ],
 
         'card' => [
@@ -98,6 +101,7 @@ return
                 'makeRevisor' => ' is now a Reviewer',
                 'cancelledMessage' => "The last operation on the article :title has been cancelled",
                 'noCancelOperation' => 'No operation to cancel',
+                'back' => 'Pagina precedente',
             ],
         ],
 

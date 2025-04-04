@@ -41,11 +41,12 @@
         <input type="file" wire:model.live="temporary_images" multiple
             class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img/">
         @error('temporary_images.*')
-            <p class="fstt-italic text-danger">{{ message }}</p>
+            <p class="fst-italic text-danger">{{ $message }}</p>
         @enderror
         @error('temporary_images')
-            <p class="fstt-italic text-danger">{{ message }}</p>
+            <p class="fst-italic text-danger">{{ $message }}</p>
         @enderror
+
     </div>
     @if (!empty($images))
         <div class="row">

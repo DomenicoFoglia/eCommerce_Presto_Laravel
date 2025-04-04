@@ -24,15 +24,19 @@ class CreateArticleForm extends Component
     public $images = [];
     public $temporary_images;
 
-    protected $messages = [
-        'title.required' => 'Il titolo è obbligatorio.',
-        'title.min' => 'Il titolo deve contenere almeno 5 caratteri.',
-        'description.required' => 'La descrizione è obbligatoria.',
-        'description.min' => 'La descrizione deve contenere almeno 5 caratteri.',
-        'price.required' => 'Il prezzo è obbligatorio.',
-        'price.numeric' => 'Il prezzo deve essere un numero.',
-        'category.required' => 'La categoria è obbligatoria.',
-    ];
+    public function messages()
+    {
+        return [
+            'title.required' => 'Il titolo è obbligatorio.',
+            'title.min' => 'Il titolo deve contenere almeno 5 caratteri.',
+            'description.required' => 'La descrizione è obbligatoria.',
+            'description.min' => 'La descrizione deve contenere almeno 5 caratteri.',
+            'price.required' => 'Il prezzo è obbligatorio.',
+            'price.numeric' => 'Il prezzo deve essere un numero.',
+            'category.required' => 'La categoria è obbligatoria.',
+            'temporary_images.*.image' => __('ui.createL.temporary_images.image'),
+        ];
+    }
 
     public function article_store()
     {

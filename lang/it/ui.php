@@ -67,6 +67,9 @@ return
             'category' => 'Categoria',
             'createBtn' => 'Crea',
             'selectCategory' => 'Seleziona categoria',
+            'temporary_images' => [
+                'image' => 'Puoi caricare solo file immagine (es. jpg, png, gif).',
+            ],
         ],
 
         'card' => [
@@ -96,6 +99,7 @@ return
                 'makeRevisor' => ' è ora un Revisore',
                 'cancelledMessage' => "ultima operazione sull'articolo :title è stata annullata",
                 'noCancelOperation' => 'Nessuna operazione da annullare',
+                'back' => 'Pagina precedente',
             ],
         ],
 
