@@ -28,7 +28,7 @@
                     @foreach ($article_to_check->images as $key => $image)
                         <div class="col-6 col-md-4">
                             <div class="card shadow-sm">
-                                <img src="{{ Storage::url($image->path) }}" class="card-img-top rounded"
+                                <img src="{{ $image->getUrl(900, 900) }}" class="card-img-top rounded"
                                     alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}">
                             </div>
                         </div>
